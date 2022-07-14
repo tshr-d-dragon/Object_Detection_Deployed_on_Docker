@@ -1,0 +1,1 @@
+cmd /k docker run -it --gpus all -v C:\Users\patil\Downloads\pothole:/home/work/ -p 8888:8888 -p 6006:6006 tfod2 bash -c "jupyter notebook --allow-root  Final_OD_pothole.ipynb --port 8888 --ip 0.0.0.0"

@@ -1,0 +1,15 @@
+cd C:\Users\patil\Downloads\models\models-master
+docker build -f .\research\object_detection\dockerfiles\tf2\Dockerfile -t tfod2 .
+
+docker run -it --gpus all -v C:\Users\patil\Downloads\pothole:/home/work/ -p 8888:8888 -p 6006:6006 tfod2 bash
+jupyter notebook --allow-root  Final_OD_pothole.ipynb --port 8888 --ip 0.0.0.0
+
+docker container rm -f $ (docker ps -a -q)
+docker images -a -q | % {docker image rm $_ -f}
+
+http://127.0.0.1:6006/?smoothing=0.1#scalars&_smoothingWeight=0.1
+
+
+Docker - SemSeg
+GAN
+Optimization
