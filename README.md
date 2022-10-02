@@ -1,6 +1,6 @@
 # Object_Detection_Deployed_on_Docker
 
-Train and predict the object detection model on docker using tensorflow object detection 2.0
+Train and predict an object detection model on docker using tensorflow object detection 2.0
 
 Steps to follow:
 1. To build image, update the root directory of tensorflow and the name of the image in the `Build.bat` file. 
